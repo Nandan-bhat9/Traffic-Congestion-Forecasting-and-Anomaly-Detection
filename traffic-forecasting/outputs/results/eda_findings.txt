@@ -1,0 +1,22 @@
+=======================================================
+  EDA FINDINGS — Traffic Congestion Mini-Project
+=======================================================
+
+Dataset shape           : (17280, 1)
+Date range              : 2024-01-01 00:00:00 → 2024-02-29 23:55:00
+
+Mean traffic            : 42.36
+Std deviation           : 13.57
+Min traffic             : 6.34
+Max traffic             : 83.51
+Coefficient of variation: 32.0%
+
+Peak hour               : 8:00  (avg traffic = 61.77)
+Weekday avg traffic     : 48.14
+Weekend avg traffic     : 26.48
+
+Key observations:
+  - Traffic exhibits clear daily periodicity with peak hours.
+  - Weekend traffic is lower than weekday traffic.
+  - Rolling averages reveal a smooth underlying trend.
+  - Short-term fluctuations exist around the trend.

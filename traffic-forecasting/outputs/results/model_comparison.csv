@@ -1,0 +1,3 @@
+Model,MAE,RMSE,Training_Time_s
+ARIMA,19.4087,22.991,1.46
+LSTM,3.774,4.8694,15.78

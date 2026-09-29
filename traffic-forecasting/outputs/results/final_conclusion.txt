@@ -1,0 +1,33 @@
+============================================================
+  FINAL CONCLUSION — Traffic Forecasting Mini-Project
+============================================================
+
+EDA Findings:
+  - Traffic shows clear daily periodicity.
+  - Peak traffic hour: 8:00.
+  - Weekday avg: 48.14  |  Weekend avg: 26.48.
+  - Traffic variability (CV): 32.0%.
+
+Feature Engineering:
+  - Time features used: hour, day_of_week, is_weekend.
+  - Lag features: lag_1, lag_3, lag_6 (5-min steps).
+  - Rolling features: rolling_mean (6-step), rolling_std (6-step).
+
+Forecasting Results:
+  ARIMA  MAE=19.4087  RMSE=22.991  (fitted in 1.5s)
+  LSTM   MAE=3.774   RMSE=4.8694  (trained in 15.8s)
+  → LSTM performed better on this dataset.
+
+Anomaly Detection:
+  - Total test observations : 3456
+  - Unusual observations    : 48  (1.39%)
+  - Error threshold used    : 13.0065
+
+Overall:
+  The project demonstrated a complete traffic analysis pipeline:
+  dataset ingestion → EDA → feature extraction → ARIMA/LSTM
+  forecasting → evaluation → anomaly detection.
+  Both classical (ARIMA) and deep-learning (LSTM) approaches were
+  compared using MAE and RMSE on a held-out chronological test set.
+  Unusual observations were flagged using a 3-sigma error threshold.
+============================================================
